@@ -24,7 +24,7 @@ const AboutMe = () => {
       <img 
         alt='кнопка'
         src={aboutMeContent ? arrowBack : arrowNext}
-        className='about-me__button'
+        className='about-me__button about-me__button_back'
         onClick={() => setAboutMeContent(!aboutMeContent)}
       />
     </div>

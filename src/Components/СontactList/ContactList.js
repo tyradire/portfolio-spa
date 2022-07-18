@@ -13,7 +13,7 @@ const ContactList = () => {
       <ContactItem icon={emailIcon} textContent={'ugarov.dany@yandex.ru'}/>
       <ContactItem icon={githubIcon} textContent={'github.com/tyradire'} socLink={'https://github.com/tyradire'}/>
       <ContactItem icon={telegramIcon} textContent={'@tyradire'} socLink={'https://t.me/tyradire'}/>
-      <ContactItem icon={phoneIcon} textContent={'+7 921 584 1298'}/>
+      <ContactItem icon={phoneIcon} textContent={'+7 921 584 1298'} socLink={'tel:+74951234567'}/>
       <ContactItem icon={locationIcon} textContent={'Санкт-Петербург'}/>
     </div>
   );

@@ -31,14 +31,14 @@ const Knowledge = () => {
           Webpack
         </li>
       </ul>
-      <div className='knowledge__icons'>
+      {/* <div className='knowledge__icons'>
         <img src={css} alt='иконка' className='knowledge__icon'/>
         <img src={html} alt='иконка' className='knowledge__icon'/>
         <img src={js} alt='иконка' className='knowledge__icon'/>
         <img src={reactjs} alt='иконка' className='knowledge__icon'/>
         <img src={nodejs} alt='иконка' className='knowledge__icon knowledge__icon_big'/>
         <img src={webpack} alt='иконка' className='knowledge__icon knowledge__icon_big'/>
-      </div>
+      </div> */}
     </div>
   );
 };

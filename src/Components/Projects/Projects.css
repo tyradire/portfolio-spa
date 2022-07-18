@@ -1,0 +1,36 @@
+.projects {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.projects::-webkit-scrollbar {
+  width: 5px;
+  background: linear-gradient(rgba(3, 56, 244, 0.71), rgba(224, 37, 206, 0.79));
+}
+
+.projects__title-container {
+  margin: 40px 0 0 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.projects__title {
+  width: 200px;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+  background: #343434;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.projects__line {
+  width: 400px;
+  border-bottom: 2px solid #000;
+}

@@ -22,14 +22,14 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  background: #545454;
+  background: #000;
   border-radius: 5px;
   color: #fff;
 }
 
 .about-me__line {
   width: 160px;
-  border-bottom: 2px solid #545454;
+  border-bottom: 2px solid #000;
 }
 
 .about-me__info {
@@ -60,8 +60,4 @@
 
 .about-me__button:hover {
   opacity: .5;
-}
-
-.about-me__button_back {
-  transform: rotate(180deg);
 }
