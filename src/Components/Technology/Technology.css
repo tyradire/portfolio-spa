@@ -1,0 +1,11 @@
+.technology {
+  width: 1156px;
+}
+
+.technology__string {
+  margin: 0 0 0 10px;
+  color: rgb(255, 255, 255, .8);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}

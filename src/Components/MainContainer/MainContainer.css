@@ -1,0 +1,23 @@
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-container__numbering {
+  text-align: end;
+  width: 40px;
+  border-right: 1px solid #2e263c;
+}
+
+.main-container__number {
+  margin: 0 5px 0 0;
+  color: rgba(90, 79, 108, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

@@ -1,0 +1,21 @@
+.skills__page {
+  position: absolute;
+  width: 240px;
+  height: 320px;
+  bottom: 0;
+  left: 0;
+}
+
+.skills__list {
+  list-style: square;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.skills__item {
+  margin-left: 20px;
+}
+
+.skills__item:nth-child(2n) {
+  color: #a1a1a1;
+}

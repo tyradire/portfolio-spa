@@ -1,17 +1,29 @@
-import About from './Components/About/About';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import Main from './Components/Main/Main';
-import Footer from './Components/Footer/Footer';
+import Contacts from './Components/Contacts/Contacts';
+import Header from './Components/Header/Header';
+import MainContainer from './Components/MainContainer/MainContainer';
+import Profile from './Components/Profile/Profile';
+import Skills from './Components/Skills/Skills';
 
 function App() {
   return (
-    <div className="app">
-      <div className='app__content'>
-        <About/>
-        <Main />
+    <BrowserRouter>
+      <div className="app">
+        <div className='app__content'>
+          <Header />
+          <div className='app__main'>
+            <div>
+              <Profile />
+              <Contacts />
+              <Skills />
+            </div>
+            <MainContainer />
+          </div>
+        </div>
       </div>
-      {/* <Footer /> */}
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,64 @@
+.skills {
+  position: relative;
+  width: 240px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255, 0.05);
+  border-right: 1px solid #343666;
+}
+
+.skills__title {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.skills__page {
+  position: absolute;
+  width: 240px;
+  height: 340px;
+  bottom: 0;
+  left: 0;
+}
+
+.skills__list {
+  list-style:square;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.skills__item {
+  margin-left: 20px;
+}
+
+.skills__item:nth-child(2n) {
+  color: #a1a1a1;
+}
+
+.skills__button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 255, 255, 0);
+  background-image: url('../../assets/images/next-page.svg');
+  background-position: center;
+  background-size: contain;
+  border: none;
+  transition: .5s;
+  z-index: 3;
+}
+
+.skills__button_rotate {
+  transform: rotate(180deg);
+}
+
+.skills__button:hover {
+  cursor: pointer;
+}
+

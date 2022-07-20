@@ -1,44 +1,33 @@
 .profile {
+  width: 240px;
+  height: 380px;
+  border-right: 1px solid #343666;
+  border-bottom: 1px solid #343666;
+  background-color: rgb(255, 255, 255, 0.05);
+}
+
+.profile__main {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .profile__photo {
-  width: 120px;
-  height: 120px;
-  background-image: url('../../assets/images/profile_photo.jpg');
-  background-size: cover;
-  border-radius: 50%;
-}
-
-.profile__description {
-  margin-left: 20px;
-}
-
-.description__surname {
   margin: 0;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-  color: #cecaca;
-  text-shadow: 0px 1px 2px #000;
+  width: 240px;
+  height: 320px;
 }
 
-.description__name {
-  margin: 0;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 43px;
-  color: #fff;
-  text-shadow: 0px 1px 2px #000;
-}
-
-.description__specialization {
-  margin: 8px 0 0 0;
-  font-weight: 700;
-  font-size: 15px;
+.profile__name {
+  margin: 5px 0 0 0;
+  font-size: 18px;
   line-height: 18px;
-  color: #cecaca;
-  text-shadow: 0px 1px 2px #000;
+  font-weight: 500;
+  color: #fff;
+}
+
+.profile__name_dev {
+  font-size: 20px;
+  line-height: 20px;
 }

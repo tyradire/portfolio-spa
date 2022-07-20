@@ -1,14 +1,14 @@
 import React from 'react';
 import './Profile.css';
+import avatar from '../../assets/images/profile_photo.jpg';
 
 const Profile = () => {
   return (
     <div className='profile'>
-      <div className='profile__photo'></div>
-      <div className='profile__description'>
-        <p className='description__surname'>Угаров</p>
-        <p className='description__name'>Даниил</p>
-        <p className='description__specialization'>Frontend Developer</p>
+      <img className='profile__photo' src={avatar}/>
+      <div className='profile__main'>
+        <p className='profile__name'>Угаров Даниил</p>
+        <p className='profile__name profile__name_dev'>Frotend Developer</p>
       </div>
     </div>
   );
