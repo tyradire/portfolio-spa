@@ -1,7 +1,7 @@
-import AboutMe from "../Components/AboutMe/AboutMe"
-import Projects from "../Components/Projects/Projects"
-import Technology from "../Components/Technology/Technology"
-import { ABOUT_ROUTE, PROJECTS_ROUTE, TECHNOLOGY_ROUTE } from "./constants"
+import AboutMe from "../Components/AboutMe/AboutMe";
+import Projects from "../Components/Projects/Projects";
+import Technology from "../Components/Technology/Technology";
+import { ABOUT_ROUTE, PROJECTS_ROUTE, TECHNOLOGY_ROUTE } from "./constants";
 
 export const mainRoutes = [
   {
@@ -14,6 +14,6 @@ export const mainRoutes = [
   },
   {
     path: TECHNOLOGY_ROUTE,
-    Components: Technology
+    Component: Technology
   },
 ]

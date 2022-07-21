@@ -41,6 +41,7 @@ const Technology = () => {
       <p className='technology__string'>## Другое ##</p>
       <p className='technology__string'>&nbsp;</p>
       <p className='technology__string'>Figma</p>
+      <p className='technology__string'>ESLint</p>
       <p className='technology__string'>Webpack</p>
       <p className='technology__string'>Git</p>
       <p className='technology__string'>MobX</p>

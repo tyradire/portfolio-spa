@@ -1,10 +1,11 @@
 .technology {
   width: 1156px;
+  background-color: #2e263c;
 }
 
 .technology__string {
   margin: 0 0 0 10px;
-  color: rgb(255, 255, 255, .8);
+  color: #b3a5c3;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
