@@ -16,10 +16,12 @@
   transition: .3s;
   border-right: 1px solid #343666;
   border-bottom: 1px solid #343666;
+  text-decoration: none;
 }
 
 .item__icon {
   margin-left: 24px;
+  pointer-events: none;
 }
 
 .item__contact {
@@ -36,4 +38,43 @@
 
 .contacts__item_no-hover {
   pointer-events: none;
+}
+
+.contacts__notification {
+  position: absolute;
+  display: none;
+  text-align: center;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  background-color: #231a32;
+  border-radius: 8px;
+}
+
+.contacts__notification_opened {
+  display: block;
+}
+
+.contacts__notification-text {
+  margin: 0;
+  padding: 6px;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba(158, 105, 165, 0.5);
+  transition: 1s;
+}
+
+.contacts__notification-text:first-of-type {
+  position: relative;
+}
+
+.contacts__notification-cross {
+  position: absolute;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  top: -15px;
+  right: -15px;
+  color: #c1c1c1;
+  cursor: pointer;
 }

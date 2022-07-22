@@ -15,7 +15,7 @@ const Header = () => {
     <div className='header'>
       <div className='header__github'>
         <img alt='Github icon' className='header__github-icon' src={githubIcon} />
-        <p className='header__github-name'>github.com/tyradire</p>
+        <a href='https://github.com/tyradire/' target='blank' className='header__github-name'>github.com/tyradire</a>
       </div>
       <Link className={isTechnology ? 'header__tab header__tab_active' : 'header__tab'} to={TECHNOLOGY_ROUTE}>
         <div className={isTechnology ? 'header__tab-light header__tab-light_active' : 'header__tab-light'}></div>
