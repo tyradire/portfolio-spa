@@ -52,6 +52,10 @@
   box-shadow: 0px 0px 10px #00d841;
 }
 
+.header__tab-list {
+  display: flex;
+}
+
 .header__tab {
   width: 230px;
   height: 42px;
@@ -87,4 +91,36 @@
 
 .header__tab:hover .header__tab-name {
   color: #8669c3;
+}
+
+.header__tab-list::-webkit-scrollbar {
+  height: 4px;
+}
+
+.header__tab-list::-webkit-scrollbar-track {
+  opacity: 1;
+  border: 1px solid #343666;
+}
+
+.header__tab-list::-webkit-scrollbar-thumb {
+  background-color: #5a4f6c;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__tab {
+    width: 180px;
+  }
+  .header__tab {
+    width: 170px;
+  }
+  .header__tab-light {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header__tab-list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 }

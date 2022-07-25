@@ -3,12 +3,12 @@ import SkillsPage from '../SkillsPage/SkillsPage';
 import './Skills.css';
 import { skillsArrayFirst, skillsArraySecond } from '../../utils/constants';
 
-const Skills = () => {
+const Skills = ({ size }) => {
 
   const [nextPageOpen, setNextPageOpen] = useState(true);
 
   return (
-    <div className='skills'>
+    <div className={size ? 'skills skills_hide' : 'skills'}>
       <button 
         className={nextPageOpen ? 'skills__button' : 'skills__button skills__button_rotate'}
         onClick={() => setNextPageOpen(!nextPageOpen)}

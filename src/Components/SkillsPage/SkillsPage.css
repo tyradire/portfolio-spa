@@ -1,8 +1,7 @@
 .skills__page {
   position: absolute;
   width: 240px;
-  height: 320px;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
 }
 

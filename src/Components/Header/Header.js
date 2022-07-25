@@ -17,18 +17,20 @@ const Header = () => {
         <img alt='Github icon' className='header__github-icon' src={githubIcon} />
         <a href='https://github.com/tyradire/' target='blank' className='header__github-name'>github.com/tyradire</a>
       </div>
-      <Link className={isTechnology ? 'header__tab header__tab_active' : 'header__tab'} to={TECHNOLOGY_ROUTE}>
-        <div className={isTechnology ? 'header__tab-light header__tab-light_active' : 'header__tab-light'}></div>
-        <p className='header__tab-name'>.tab__tech</p>
-      </Link>
-      <Link className={isProject ? 'header__tab header__tab_active' : 'header__tab'} to={PROJECTS_ROUTE}>
-        <div className={isProject ? 'header__tab-light header__tab-light_active' : 'header__tab-light'}></div>
-        <p className='header__tab-name'>.tab__projects</p>
-      </Link>
-      <Link className={isAbout ? 'header__tab header__tab_active' : 'header__tab'} to={ABOUT_ROUTE}>
-        <div className={isAbout ? 'header__tab-light header__tab-light_active' : 'header__tab-light'}></div>
-        <p className='header__tab-name'>.tab__about-me</p>
-      </Link>
+      <div className='header__tab-list'>
+        <Link className={isTechnology ? 'header__tab header__tab_active' : 'header__tab'} to={TECHNOLOGY_ROUTE}>
+          <div className={isTechnology ? 'header__tab-light header__tab-light_active' : 'header__tab-light'}></div>
+          <p className='header__tab-name'>.tab__tech</p>
+        </Link>
+        <Link className={isProject ? 'header__tab header__tab_active' : 'header__tab'} to={PROJECTS_ROUTE}>
+          <div className={isProject ? 'header__tab-light header__tab-light_active' : 'header__tab-light'}></div>
+          <p className='header__tab-name'>.tab__projects</p>
+        </Link>
+        <Link className={isAbout ? 'header__tab header__tab_active' : 'header__tab'} to={ABOUT_ROUTE}>
+          <div className={isAbout ? 'header__tab-light header__tab-light_active' : 'header__tab-light'}></div>
+          <p className='header__tab-name'>.tab__about-me</p>
+        </Link>
+      </div> 
     </div>
   );
 };

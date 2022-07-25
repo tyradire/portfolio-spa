@@ -1,52 +1,60 @@
-import React from 'react';
+import React, { createRef, useEffect } from 'react';
 import './Technology.css';
 
-const Technology = () => {
+const Technology = ( {setHeightContainer} ) => {
+
+  const refHeightContainer = createRef();
+
+  useEffect(() => {
+    console.log('test', refHeightContainer.current.scrollHeight);
+    const a = refHeightContainer.current.scrollHeight;
+    setHeightContainer(a);
+  }, [])
 
   return (
-    <div className='technology'>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>    #################</p>
-      <p className='technology__string'>    # Ключевые навыки #</p>
-      <p className='technology__string'>    #################</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>## HTML 5 ##</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>Адаптивная, кроссбраузерная вёрстка.</p>
-      <p className='technology__string'>Понимание семантики.</p>
-      <p className='technology__string'>Использование встроенной валидации форм.</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>## CSS 3 ##</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>Понимание и опыт использования БЭМ </p>
-      <p className='technology__string'>Flexbox и Grid Layout</p>
-      <p className='technology__string'>Работа с Bootstrap</p>
-      <p className='technology__string'>Опыт работы с анимациями</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>## JS ##</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>Знание нативного JS, работа с ECMAScript 6</p>
-      <p className='technology__string'>Взаимодействия с DOM-деревом</p>
-      <p className='technology__string'>Обработка событий</p>
-      <p className='technology__string'>Асинхронный код</p>
-      <p className='technology__string'>Опыт работы с Node.js</p>
-      <p className='technology__string'>Работа с API</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>## React.js ##</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>Хуки</p>
-      <p className='technology__string'>Создание и подключение контекста</p>
-      <p className='technology__string'>React Router</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>## Другое ##</p>
-      <p className='technology__string'>&nbsp;</p>
-      <p className='technology__string'>Figma</p>
-      <p className='technology__string'>ESLint</p>
-      <p className='technology__string'>Webpack</p>
-      <p className='technology__string'>Git</p>
-      <p className='technology__string'>MobX</p>
-      <p className='technology__string'>PostgreSQL / MongoDB</p>
-      <p className='technology__string'>Работа с облачным сервером</p>
+    <div ref={refHeightContainer} className='technology'>
+      <p className='technology__string'><br/>&nbsp;
+      <br/>#################
+      <br/># Ключевые навыки #
+      <br/>#################
+      <br/>&nbsp;
+      <br/>## HTML 5 ##
+      <br/>&nbsp;
+      <br/>Адаптивная, кроссбраузерная вёрстка.
+      <br/>Понимание семантики.
+      <br/>Использование встроенной валидации форм.
+      <br/>&nbsp;
+      <br/>## CSS 3 ##
+      <br/>&nbsp;
+      <br/>Понимание и опыт использования БЭМ 
+      <br/>Flexbox и Grid Layout
+      <br/>Работа с Bootstrap
+      <br/>Опыт работы с анимациями
+      <br/>&nbsp;
+      <br/>## JS ##
+      <br/>&nbsp;
+      <br/>Знание нативного JS, работа с ECMAScript 6
+      <br/>Взаимодействия с DOM-деревом
+      <br/>Обработка событий
+      <br/>Асинхронный код
+      <br/>Опыт работы с Node.js
+      <br/>Работа с API
+      <br/>&nbsp;
+      <br/>## React.js ##
+      <br/>&nbsp;
+      <br/>Хуки
+      <br/>Создание и подключение контекста
+      <br/>React Router
+      <br/>&nbsp;
+      <br/>## Другое ##
+      <br/>&nbsp;
+      <br/>Figma
+      <br/>ESLint
+      <br/>Webpack
+      <br/>Git
+      <br/>MobX
+      <br/>PostgreSQL / MongoDB
+      <br/>Работа с облачным сервером</p>
     </div>
   );
 };
