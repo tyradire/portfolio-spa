@@ -1,9 +1,5 @@
 .app {
   width: 100%;
-  padding-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .app__content {
@@ -23,14 +19,26 @@
   display: flex;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1440px) {
   .app__content {
-    width: 90%;
+    width: 1024px;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .app__main {
-    height: 553px;
+@media screen and (max-width: 1280px) {
+  .app__content {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .app__content {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .app__content {
+    width: 450px;
   }
 }

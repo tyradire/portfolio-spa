@@ -106,7 +106,7 @@
   background-color: #5a4f6c;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .header__tab {
     width: 180px;
   }
@@ -114,7 +114,16 @@
     width: 170px;
   }
   .header__tab-light {
-    display: none;
+    width: 12px;
+    height: 8px;
+  }
+  .header__tab-light_active {
+    box-shadow: 0px 0px 8px #00d841;
+  }
+  .header__tab-name {
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: 400;
   }
 }
 
