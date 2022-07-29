@@ -3,6 +3,7 @@ import { ABOUT_ROUTE, PROJECTS_ROUTE, TECHNOLOGY_ROUTE } from '../../utils/const
 import './Header.css';
 import githubIcon from '../../assets/images/github-icon.svg';
 import { Link, useLocation } from 'react-router-dom';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const Header = ({ size }) => {
 
@@ -32,7 +33,8 @@ const Header = ({ size }) => {
           <div className={isAbout ? 'header__tab-light header__tab-light_active' : 'header__tab-light'}></div>
           <p className='header__tab-name'>.tab__about-me</p>
         </Link>
-      </div> 
+      </div>
+      <BurgerMenu />
     </div>
   );
 };

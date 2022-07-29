@@ -56,11 +56,11 @@
 
 .header__tab-list {
   display: flex;
-  width: 400px;
+  width: calc(100% - 240px);
 }
 
 .header__tab {
-  width: 230px;
+  width: 180px;
   height: 42px;
   display: flex;
   align-items: center;
@@ -109,9 +109,6 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .header__tab {
-    width: 180px;
-  }
   .header__tab-light {
     width: 12px;
     height: 8px;
