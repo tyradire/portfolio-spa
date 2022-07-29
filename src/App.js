@@ -10,6 +10,7 @@ import Profile from './Components/Profile/Profile';
 function App() {
 
   const [isTablet, setIsTablet] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     window.addEventListener('resize', setWindowSize);
@@ -18,11 +19,18 @@ function App() {
     };
   }, []);
 
+  
+
   const setWindowSize = () => {
-    if (window.screen.width < 800) {
+    if (window.screen.width < 500) {
+      setIsTablet(false);
+      setIsMobile(true);
+    } else if (window.screen.width < 800) {
       setIsTablet(true);
+      setIsMobile(false);
     } else {
       setIsTablet(false);
+      setIsMobile(false);
     }
     return
   }
@@ -31,16 +39,18 @@ function App() {
     setWindowSize();
   },[])
 
+  console.log(isTablet, 'isTablet')
+  console.log(isMobile, 'isMobile')
+
   return (
     <BrowserRouter>
       <div className="app">
         <div className='app__content'>
-          <Header />
+          <Header size={isTablet || isMobile} />
           <div className='app__main'>
             <div className='app__sidebar'>
               <Profile />
               <Contacts />
-              {/* <Skills size={isTablet} /> */}
             </div>
             <MainContainer size={isTablet} />
           </div>

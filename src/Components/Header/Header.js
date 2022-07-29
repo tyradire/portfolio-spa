@@ -4,7 +4,7 @@ import './Header.css';
 import githubIcon from '../../assets/images/github-icon.svg';
 import { Link, useLocation } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ size }) => {
 
   const location = useLocation();
   const isAbout = location.pathname === ABOUT_ROUTE;
@@ -15,7 +15,9 @@ const Header = () => {
     <div className='header'>
       <div className='header__github'>
         <img alt='Github icon' className='header__github-icon' src={githubIcon} />
-        <a href='https://github.com/tyradire/' target='blank' className='header__github-name'>github.com/tyradire</a>
+        <a href='https://github.com/tyradire/' target='blank' className='header__github-name'>
+          github.com/tyradire
+        </a>
       </div>
       <div className='header__tab-list'>
         <Link className={isTechnology ? 'header__tab header__tab_active' : 'header__tab'} to={TECHNOLOGY_ROUTE}>
