@@ -18,6 +18,12 @@
   transform: scale(1.01);
 }
 
+.slide-item:hover {
+  cursor: default;
+  box-shadow: none;
+  transform: none;
+}
+
 .slide-item__cover {
   position: absolute;
   top: 0;
@@ -32,4 +38,19 @@
 
 .slide-item:hover .slide-item__cover {
   opacity: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .slide-item {
+    position: relative;
+    height: 236px;
+    padding: 0;
+    margin: 0;
+    background-size: contain;
+    border-radius: 0;
+  }
+  .slide-item__cover {
+    border-radius: 0;
+    opacity: 0;
+  }
 }

@@ -11,6 +11,10 @@
   justify-content: center;
 }
 
+.profile__wrapper {
+  background-color: #5e415c;
+}
+
 .profile__photo {
   margin: 0;
   width: 238px;
@@ -28,4 +32,26 @@
 .profile__name_dev {
   font-size: 20px;
   line-height: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .profile {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  .profile__wrapper {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .profile__photo {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
 }

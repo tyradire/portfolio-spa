@@ -42,3 +42,16 @@
 .slider__button_hidden {
   display: none;
 }
+
+@media screen and (max-width: 500px) {
+  .slider {
+    display: flex;
+    height: 240px;
+  }
+  .slider__slide-items {
+    justify-content: flex-start;
+    height: 240px;
+    margin: 0;
+    background-color: #2e263c;
+  }
+}

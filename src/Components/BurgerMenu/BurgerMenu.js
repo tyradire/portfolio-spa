@@ -5,9 +5,13 @@ const BurgerMenu = () => {
 
   const [isOpen, setIsOpened] = useState(false);
 
+  // const menuHeight = {
+  //   height: `${componentHeight}px`,
+  // }
+
   return (
     <div className={!isOpen ? 'burger-menu' : 'burger-menu burger-menu_opened'}>
-      <label className='burger-menu__label' for='burger-checkbox'>
+      <label className='burger-menu__label' htmlFor='burger-checkbox'>
         <input 
           type='checkbox' 
           className='burger-menu__input' 

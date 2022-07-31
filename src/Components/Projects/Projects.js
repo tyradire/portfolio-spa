@@ -5,20 +5,20 @@ const Projects = ( {setHeightContainer} ) => {
 
   const refHeightContainer = createRef();
 
-  useEffect(() => {
-    console.log('test', refHeightContainer.current.scrollHeight);
-    const a = refHeightContainer.current.scrollHeight;
-    setHeightContainer(a);
-  }, [])
+  // useEffect(() => {
+  //   console.log('test', refHeightContainer.current.scrollHeight);
+  //   const a = refHeightContainer.current.scrollHeight;
+  //   setHeightContainer(a);
+  // }, [])
 
   return (
     
     <div ref={refHeightContainer} className='technology'>
       <p className='technology__string'>
         <br/>&nbsp;
-        <br/>###################
+        <br/>###############
         <br/># Последние проекты #
-        <br/>###################
+        <br/>###############
         <br/>&nbsp;
         <br/>## Watermelon Shop ##
         <br/>&nbsp;

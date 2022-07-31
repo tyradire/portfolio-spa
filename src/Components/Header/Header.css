@@ -124,11 +124,14 @@
 }
 
 @media screen and (max-width: 820px) {
-  .header__tab {
-    width: 160px;
-  }
   .header__tab-list {
     overflow-x: scroll;
     overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: none;
   }
 }

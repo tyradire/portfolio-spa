@@ -1,11 +1,11 @@
 import React from 'react';
 import './SlideItem.css';
 
-const SlideItem = ({ image }) => {
+const SlideItem = ({ image, widthSlide }) => {
 
   return (
-    <div style={{backgroundImage : `url(${image})`}} className='slide-item'>
-      <div className='slide-item__cover'></div>
+    <div className='slide-item' style={{backgroundImage : `url(${image})`, width: `${widthSlide}px`}}>
+      <div className='slide-item__cover' style={{width: `${widthSlide}px`}}></div>
     </div>
   );
 };

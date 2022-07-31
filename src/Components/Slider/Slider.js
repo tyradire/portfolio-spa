@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { createRef, useEffect, useState } from 'react';
 import SlideItem from '../SlideItem/SlideItem';
 import './Slider.css';
 import watermelonShop from '../../assets/images/watermelon-shop.png';
@@ -9,39 +9,50 @@ import howToLearn from '../../assets/images/how-to-learn.png';
 
 const Slider = () => {
 
-  const [counter, setConter] = useState(20);
+  const [counter, setConter] = useState(0);
+  const [widthSlider, setSliderWidth] = useState(0);
+  const refSliderWidth = createRef();
+
+  useEffect(() => {
+    const sliderWidth = refSliderWidth.current.getBoundingClientRect().width;
+    setSliderWidth(sliderWidth)
+    console.log(widthSlider);
+  }, [widthSlider])
 
   const slide = {
     transform: `translate(${counter}px)`,
+    width: `${widthSlider*5}px`,
   }
 
   const toRight = () => { 
-    if (counter < -240 || counter - 150 < -240 ) {
-      setConter(-240);
+    if (counter < -(widthSlider * 4) || counter - widthSlider < -(widthSlider * 4) ) {
+      setConter(0);
     } else {
-      setConter(counter - 150);
+      setConter(counter - widthSlider);
     }
   }
 
   const toLeft = () => {
-    if (counter > 20 || counter + 150 > 20) {
-      setConter(20);
+    if (counter > 0 || counter + widthSlider > 0) {
+      setConter(0);
     } else {
-      setConter(counter + 150);
+      setConter(counter + widthSlider);
     }
   }
 
+  console.log(widthSlider)
+
   return (
-    <div className='slider'>
-      <button onClick={() => toLeft()} className={counter !== 20 ? 'slider__button' : 'slider__button slider__button_hidden'}></button>
+    <div ref={refSliderWidth} className='slider'>
+      <button onClick={() => toLeft()} className={counter !== 0 ? 'slider__button' : 'slider__button slider__button_hidden'}></button>
       <div className='slider__slide-items' style={slide}>
-        <SlideItem image={watermelonShop} />
-        <SlideItem image={countdownJs} />
-        <SlideItem image={mestoSpa} />
-        <SlideItem image={russianTravel} />
-        <SlideItem image={howToLearn} />
+        <SlideItem image={watermelonShop} widthSlide={widthSlider} />
+        <SlideItem image={countdownJs} widthSlide={widthSlider} />
+        <SlideItem image={mestoSpa} widthSlide={widthSlider} />
+        <SlideItem image={russianTravel} widthSlide={widthSlider} />
+        <SlideItem image={howToLearn} widthSlide={widthSlider} />
       </div>
-      <button onClick={() => toRight()} className={counter !== -240 ? 'slider__button slider__button_right' : 'slider__button slider__button_right slider__button_hidden'}></button>
+      <button onClick={() => toRight()} className={counter !== -`${widthSlider * 5}` ? 'slider__button slider__button_right' : 'slider__button slider__button_right slider__button_hidden'}></button>
     </div>
   );
 };

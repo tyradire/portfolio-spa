@@ -20,8 +20,9 @@ const MainContainer = ({ size }) => {
   }
 
   useEffect(() => {
-    const contentHeight = refComponent.current.getBoundingClientRect().height;
+    // const contentHeight = refComponent.current.getBoundingClientRect().height;
     createStrings(heightContainer + 40);
+    // setComponentHeight(refComponent.current.clientHeight);
     // createStrings(size ? heightContainer + 40 : contentHeight);
   }, [size, heightContainer])
 

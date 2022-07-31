@@ -34,7 +34,6 @@ const Header = ({ size }) => {
           <p className='header__tab-name'>.tab__about-me</p>
         </Link>
       </div>
-      <BurgerMenu />
     </div>
   );
 };

@@ -14,9 +14,9 @@ const Technology = ( {setHeightContainer} ) => {
   return (
     <div ref={refHeightContainer} className='technology'>
       <p className='technology__string'><br/>&nbsp;
-      <br/>#################
+      <br/>##############
       <br/># Ключевые навыки #
-      <br/>#################
+      <br/>##############
       <br/>&nbsp;
       <br/>## HTML 5 ##
       <br/>&nbsp;

@@ -29,7 +29,7 @@ const Contacts = () => {
       </a>
       <div className='contacts__item' onClick={(e) => copyContact(e)}>
         <img className='item__icon' src={emailIcon}/>
-        <p className='item__contact'>ugarov.dany@yandex.ru</p>
+        <p className='item__contact'>ugarov.dany@ya.ru</p>
       </div>
       <div className='contacts__item' onClick={(e) => copyContact(e)}>
         <img className='item__icon' src={phoneIcon}/>
