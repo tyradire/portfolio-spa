@@ -37,7 +37,6 @@
 
 .contacts__item_no-hover {
   pointer-events: none;
-  border-bottom: none;
 }
 
 .contacts__notification {
