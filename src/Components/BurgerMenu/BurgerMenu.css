@@ -1,6 +1,6 @@
 .burger-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   height: 0;
   left: 0;
@@ -8,10 +8,46 @@
   z-index: 10;
   transition: .5s;
   background-color:#231a32;
+  border-bottom: 1px solid #655f6f;
+}
+
+.burger-menu__links {
+  position: fixed;
+  top: -268px;
+  left: calc(50% - 150px);
+  display: flex;
+  flex-direction:column;
+  transition: .75s;
+}
+
+.burger-menu__links_opened {
+  top: 40px;
+}
+
+.burger-menu__button {
+  width: 300px;
+  margin-top: 30px;
+  color: #5e415c;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #231a32;
+}
+
+.burger-menu__button:hover {
+  color: #755172;
+}
+
+.burger-menu__button:active {
+  border: none;
 }
 
 .burger-menu_opened {
-  height: 200px;
+  height: 268px;
   background-color:#231a32;
 }
 
@@ -20,11 +56,12 @@
 }
 
 .burger-menu__wrapper {
+  padding: 0 6px;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  transform: translate(-20px);
+  z-index: 10;
 }
 
 .wrapper__line {
@@ -32,29 +69,29 @@
   width: 40px;
   background-color: #5e415c;
   margin-bottom: 10px;
-  transition: .5s;
+  transition: .3s;
 }
 
 .wrapper__line:first-of-type {
   margin-top: 10px;
 }
 
-
 .burger-menu__input:checked ~ .burger-menu__wrapper .wrapper__line:first-child {
-  width: 20px;
+  width: 22px;
   background-color: #d7b0b0;
-  transform: rotate(45deg) translateX(15px) translateY(-10px);
+  transform: rotate(45deg) translateX(6px) translateY(2px);
 }
 
 .burger-menu__input:checked ~ .burger-menu__wrapper .wrapper__line:last-child {
-  width: 20px;
+  width: 22px;
   background-color: #d7b0b0;
-  transform: rotate(45deg) translateX(15px) translateY(-30px);
+  transform: rotate(45deg) translateX(9px) translateY(-18px);
 }
 
 .burger-menu__input:checked ~ .burger-menu__wrapper .wrapper__line:nth-child(2){
+  width: 42px;
   background-color: #d7b0b0;
-  transform: rotate(-45deg) translateX(12px) translateY(7px);
+  transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 500px) {

@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useState } from 'react';
+import React, { createRef, useRef, useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import BurgerMenu from './Components/BurgerMenu/BurgerMenu';
@@ -6,10 +6,15 @@ import Contacts from './Components/Contacts/Contacts';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import MainContainer from './Components/MainContainer/MainContainer';
+import MobileContainer from './Components/MobileContainer/MobileContainer';
 import Profile from './Components/Profile/Profile';
 import Projects from './Components/Projects/Projects';
 
 function App() {
+
+  const scrollRefAboutMe = useRef(null);
+  const scrollRefTechnology = useRef(null);
+  const scrollRefProjects = useRef(null);
 
   // const heightComponent = createRef();
   const [isTablet, setIsTablet] = useState(false);
@@ -54,17 +59,26 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <div className='app__content'>
-          <BurgerMenu />
+          <BurgerMenu 
+            scrollRefAboutMe={scrollRefAboutMe} 
+            scrollRefTechnology={scrollRefTechnology} 
+            scrollRefProjects={scrollRefProjects}
+          />
           <Header size={isTablet || isMobile} />
           <div className='app__main'>
             <div className='app__sidebar'>
             <Profile />
             <Contacts />
-            <MainContainer size={isTablet} />
+            {/* <MainContainer size={isTablet} /> */}
             </div>
             {/* <MainContainer size={isTablet} /> */}
           </div>
-          <Footer />
+          <MobileContainer 
+            scrollRefAboutMe={scrollRefAboutMe} 
+            scrollRefTechnology={scrollRefTechnology} 
+            scrollRefProjects={scrollRefProjects}
+          />
+          
         </div>
       </div>
     </BrowserRouter>

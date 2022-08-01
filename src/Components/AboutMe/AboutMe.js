@@ -12,7 +12,7 @@ const AboutMe = ( {setHeightContainer} ) => {
   }, [])
 
   return (
-    <div ref={refHeightContainer} className='technology'>
+    <div  className='technology'>
       <p className='technology__string'>
         <br/>&nbsp;
         <h2 className='technology__subtitle'>Обо мне
