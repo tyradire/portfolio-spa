@@ -2,10 +2,10 @@ import React from 'react';
 import Slider from '../Slider/Slider';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ isMobile, isTablet }) => {
   return (
     <div className='footer'>
-      <Slider />
+      <Slider isMobile={isMobile} isTable={isTablet} />
     </div>
   );
 };

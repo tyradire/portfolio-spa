@@ -51,8 +51,6 @@ function App() {
   //   setComponentHeight(heightComponent.current.clientHeight)
   // }, [])
 
-  console.log(isTablet, 'isTablet')
-  console.log(isMobile, 'isMobile')
   // console.log(componentHeight, 'Высота компонента')
 
   return (
@@ -69,15 +67,19 @@ function App() {
             <div className='app__sidebar'>
             <Profile />
             <Contacts />
-            {/* <MainContainer size={isTablet} /> */}
+            
             </div>
-            {/* <MainContainer size={isTablet} /> */}
+            {!isMobile ? <MainContainer size={isTablet} /> : ''} 
           </div>
-          <MobileContainer 
-            scrollRefAboutMe={scrollRefAboutMe} 
-            scrollRefTechnology={scrollRefTechnology} 
-            scrollRefProjects={scrollRefProjects}
-          />
+          
+          {
+            isMobile ? <MobileContainer 
+                scrollRefAboutMe={scrollRefAboutMe} 
+                scrollRefTechnology={scrollRefTechnology} 
+                scrollRefProjects={scrollRefProjects}
+              />
+            : <Footer isTablet={isTablet} isMobile={isMobile}/>
+          }
           
         </div>
       </div>

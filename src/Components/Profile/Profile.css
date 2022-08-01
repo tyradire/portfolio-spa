@@ -13,12 +13,13 @@
 
 .profile__wrapper {
   background-color: #5e415c;
+  height: 320px;
 }
 
 .profile__photo {
   margin: 0;
   width: 238px;
-  height: 320px;
+  height: 100%;
 }
 
 .profile__name {

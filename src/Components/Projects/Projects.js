@@ -5,11 +5,10 @@ const Projects = ( {setHeightContainer} ) => {
 
   const refHeightContainer = createRef();
 
-  // useEffect(() => {
-  //   console.log('test', refHeightContainer.current.scrollHeight);
-  //   const a = refHeightContainer.current.scrollHeight;
-  //   setHeightContainer(a);
-  // }, [])
+  useEffect(() => {
+    const a = refHeightContainer.current.scrollHeight;
+    setHeightContainer(a);
+  }, [])
 
   return (
     

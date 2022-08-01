@@ -30,7 +30,8 @@ const BurgerMenu = ({ scrollRefAboutMe, scrollRefTechnology, scrollRefProjects }
           type='checkbox' 
           className='burger-menu__input' 
           id='burger-checkbox'
-          onClick={() => setIsOpened(!isOpen)}
+          checked={isOpen}
+          onChange={() => setIsOpened(!isOpen)}
         >
         </input>
         <div className='burger-menu__wrapper'>
