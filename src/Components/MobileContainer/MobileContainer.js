@@ -10,8 +10,8 @@ const MobileContainer = ({ scrollRefAboutMe, scrollRefTechnology, scrollRefProje
         <h2 className='mobile-container__subtitle'>Обо мне
         <br/>======
         </h2>
-        <p className='mobile-container__text'>Привет! Меня зовут Даниил
-        Долгое время я работал в мебельном салоне.
+        <p className='mobile-container__text'>Привет! Меня зовут Даниил.
+        <br/>Долгое время я работал в мебельном салоне.
         В работе часто приходилось просматривать сайты поставщиков и в них я улавливал какие-то интересные реализации и дизайнерские решения.
         Несколько раз была необходимость срочно внести правки на сайте салона. Меня крайне увлёк и захватил этот процесс.
         Появилась заинтересованность в вёрстке, захотелось понять как всё устроено и работает.
@@ -80,7 +80,7 @@ const MobileContainer = ({ scrollRefAboutMe, scrollRefTechnology, scrollRefProje
       </section>
       <section className='mobile-container__section' ref={scrollRefProjects}>
         <h2 className='mobile-container__subtitle'>Последние проекты
-        <br/>------------------------------
+        <br/>=============
         </h2>
         <p className='mobile-container__subtitle'>
           Watermelon Shop
