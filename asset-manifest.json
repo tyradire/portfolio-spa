@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-spa/static/css/main.0972401b.css",
-    "main.js": "/portfolio-spa/static/js/main.bc2c09bc.js",
+    "main.css": "/portfolio-spa/static/css/main.1e10e132.css",
+    "main.js": "/portfolio-spa/static/js/main.0599af39.js",
     "static/js/787.8e7b9eeb.chunk.js": "/portfolio-spa/static/js/787.8e7b9eeb.chunk.js",
     "static/media/watermelon-shop.png": "/portfolio-spa/static/media/watermelon-shop.033f294ebe74e11ccd1b.png",
     "static/media/how-to-learn.png": "/portfolio-spa/static/media/how-to-learn.786d7965158901e4842d.png",
@@ -16,12 +16,12 @@
     "static/media/arrow-back.svg": "/portfolio-spa/static/media/arrow-back.7e7d0a912fa05bd17716.svg",
     "static/media/phone-icon.svg": "/portfolio-spa/static/media/phone-icon.38b1d173132d6a0f6e4dc5963d336f4a.svg",
     "static/media/location-icon.svg": "/portfolio-spa/static/media/location-icon.0e58cd055e9be74f49b8019f000d7f86.svg",
-    "main.0972401b.css.map": "/portfolio-spa/static/css/main.0972401b.css.map",
-    "main.bc2c09bc.js.map": "/portfolio-spa/static/js/main.bc2c09bc.js.map",
+    "main.1e10e132.css.map": "/portfolio-spa/static/css/main.1e10e132.css.map",
+    "main.0599af39.js.map": "/portfolio-spa/static/js/main.0599af39.js.map",
     "787.8e7b9eeb.chunk.js.map": "/portfolio-spa/static/js/787.8e7b9eeb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0972401b.css",
-    "static/js/main.bc2c09bc.js"
+    "static/css/main.1e10e132.css",
+    "static/js/main.0599af39.js"
   ]
 }
