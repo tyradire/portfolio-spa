@@ -45,7 +45,8 @@
   text-align: center;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
-  background-color: #231a32;
+  background-color: #272033;
+  border: 1px solid #5e415c;
   border-radius: 8px;
 }
 
@@ -58,7 +59,7 @@
   padding: 6px;
   font-size: 18px;
   line-height: 18px;
-  color: rgba(158, 105, 165, 0.5);
+  color: #5e415c;
 }
 
 .contacts__notification-text:first-of-type {
@@ -73,6 +74,15 @@
   font-weight: 400;
   top: -20px;
   right: -15px;
-  color: #c1c1c1;
+  color: #5e415c;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .contacts__notification {
+    position: fixed;
+    width: 80%;
+    top: 309px;
+    left: 10%;
+  }
 }

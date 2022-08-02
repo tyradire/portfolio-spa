@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.212abeb2.css",
-    "main.js": "/static/js/main.d66ff6c1.js",
-    "static/js/787.8e7b9eeb.chunk.js": "/static/js/787.8e7b9eeb.chunk.js",
-    "static/media/watermelon-shop.png": "/static/media/watermelon-shop.033f294ebe74e11ccd1b.png",
-    "static/media/how-to-learn.png": "/static/media/how-to-learn.786d7965158901e4842d.png",
-    "static/media/mesto-spa.png": "/static/media/mesto-spa.f77bbd98d99ebedc6b64.png",
-    "static/media/russian-travel.png": "/static/media/russian-travel.8bec5a5c16e0bed7cd34.png",
-    "static/media/profile_photo.jpg": "/static/media/profile_photo.255b3fb3c666499a3b54.jpg",
-    "static/media/countdown-js.png": "/static/media/countdown-js.e842e4a086ac7168ae4e.png",
-    "static/media/github-icon.svg": "/static/media/github-icon.95b6ec879ab5145ef7ce36ca6459d443.svg",
-    "static/media/telegram-icon.svg": "/static/media/telegram-icon.5274508d55783f04b15b5d24b21e9274.svg",
-    "static/media/email-icon.svg": "/static/media/email-icon.0e5e2d348a38b8a3a965e8c4dc502b67.svg",
-    "index.html": "/index.html",
-    "static/media/arrow-back.svg": "/static/media/arrow-back.7e7d0a912fa05bd17716.svg",
-    "static/media/phone-icon.svg": "/static/media/phone-icon.38b1d173132d6a0f6e4dc5963d336f4a.svg",
-    "static/media/location-icon.svg": "/static/media/location-icon.0e58cd055e9be74f49b8019f000d7f86.svg",
-    "main.212abeb2.css.map": "/static/css/main.212abeb2.css.map",
-    "main.d66ff6c1.js.map": "/static/js/main.d66ff6c1.js.map",
-    "787.8e7b9eeb.chunk.js.map": "/static/js/787.8e7b9eeb.chunk.js.map"
+    "main.css": "/portfolio-spa/static/css/main.1e10e132.css",
+    "main.js": "/portfolio-spa/static/js/main.0599af39.js",
+    "static/js/787.8e7b9eeb.chunk.js": "/portfolio-spa/static/js/787.8e7b9eeb.chunk.js",
+    "static/media/watermelon-shop.png": "/portfolio-spa/static/media/watermelon-shop.033f294ebe74e11ccd1b.png",
+    "static/media/how-to-learn.png": "/portfolio-spa/static/media/how-to-learn.786d7965158901e4842d.png",
+    "static/media/mesto-spa.png": "/portfolio-spa/static/media/mesto-spa.f77bbd98d99ebedc6b64.png",
+    "static/media/russian-travel.png": "/portfolio-spa/static/media/russian-travel.8bec5a5c16e0bed7cd34.png",
+    "static/media/profile_photo.jpg": "/portfolio-spa/static/media/profile_photo.255b3fb3c666499a3b54.jpg",
+    "static/media/countdown-js.png": "/portfolio-spa/static/media/countdown-js.e842e4a086ac7168ae4e.png",
+    "static/media/github-icon.svg": "/portfolio-spa/static/media/github-icon.95b6ec879ab5145ef7ce36ca6459d443.svg",
+    "static/media/telegram-icon.svg": "/portfolio-spa/static/media/telegram-icon.5274508d55783f04b15b5d24b21e9274.svg",
+    "static/media/email-icon.svg": "/portfolio-spa/static/media/email-icon.0e5e2d348a38b8a3a965e8c4dc502b67.svg",
+    "index.html": "/portfolio-spa/index.html",
+    "static/media/arrow-back.svg": "/portfolio-spa/static/media/arrow-back.7e7d0a912fa05bd17716.svg",
+    "static/media/phone-icon.svg": "/portfolio-spa/static/media/phone-icon.38b1d173132d6a0f6e4dc5963d336f4a.svg",
+    "static/media/location-icon.svg": "/portfolio-spa/static/media/location-icon.0e58cd055e9be74f49b8019f000d7f86.svg",
+    "main.1e10e132.css.map": "/portfolio-spa/static/css/main.1e10e132.css.map",
+    "main.0599af39.js.map": "/portfolio-spa/static/js/main.0599af39.js.map",
+    "787.8e7b9eeb.chunk.js.map": "/portfolio-spa/static/js/787.8e7b9eeb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.212abeb2.css",
-    "static/js/main.d66ff6c1.js"
+    "static/css/main.1e10e132.css",
+    "static/js/main.0599af39.js"
   ]
 }

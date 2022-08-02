@@ -5,7 +5,7 @@ import githubIcon from '../../assets/images/github-icon.svg';
 import { Link, useLocation } from 'react-router-dom';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
-const Header = ({ size }) => {
+const Header = () => {
 
   const location = useLocation();
   const isAbout = location.pathname === ABOUT_ROUTE;

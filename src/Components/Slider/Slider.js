@@ -6,13 +6,16 @@ import countdownJs from '../../assets/images/countdown-js.png';
 import mestoSpa from '../../assets/images/mesto-spa.png';
 import russianTravel from '../../assets/images/russian-travel.png';
 import howToLearn from '../../assets/images/how-to-learn.png';
+import { AMOUNT, MARGIN_AMOUNT, SWIPE_DISTANCE } from '../../utils/constants';
 
-const Slider = ({ isMobile, isTablet }) => {
+const Slider = ({ size }) => {
 
   const [counter, setConter] = useState(0);
   const [widthSlider, setSliderWidth] = useState(0);
   const [scale, setScale] = useState(0);
   const [sliderMargin, setSliderMargin] = useState(0);
+  const [touchStart, setTouchStart] = useState(null)
+  const [touchEnd, setTouchEnd] = useState(null)
   const refSliderWidth = createRef();
 
   useEffect(() => {
@@ -21,7 +24,7 @@ const Slider = ({ isMobile, isTablet }) => {
   }, [])
 
   useEffect(() => {
-    if (widthSlider > 799) {
+    if (widthSlider > 769) {
       setScale(300);
       setSliderMargin(10)
     } else {
@@ -32,13 +35,13 @@ const Slider = ({ isMobile, isTablet }) => {
 
   const slide = {
     transform: `translate(${counter}px)`,
-    width: `${scale*6 + 50}px`,
+    width: `${scale*AMOUNT + MARGIN_AMOUNT}px`,
   }
 
   const toRight = () => {
-    if ( widthSlider - counter + scale + 10 > (scale + sliderMargin)*6) {
+    if ( widthSlider - counter + scale + sliderMargin > (scale + sliderMargin)*AMOUNT) {
       console.log('typic')
-      setConter(-(scale + sliderMargin)*6 + widthSlider);
+      setConter(-(scale + sliderMargin)*AMOUNT + widthSlider);
     } else {
       setConter(counter - scale - sliderMargin);
     }
@@ -52,18 +55,42 @@ const Slider = ({ isMobile, isTablet }) => {
     }
   }
 
+  const onTouchStart = (e) => {
+    setTouchEnd(null)
+    setTouchStart(e.targetTouches[0].clientX)
+  }
+
+  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX)
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return
+    const distance = touchStart - touchEnd
+    const isLeftSwipe = distance > SWIPE_DISTANCE
+    const isRightSwipe = distance < -SWIPE_DISTANCE
+    if (isLeftSwipe) {
+      toRight()
+    } else if (isRightSwipe) {
+      toLeft()
+    } else return; 
+  }
+
   return (
     <div ref={refSliderWidth} className='slider'>
       <button onClick={() => toLeft()} className={counter !== 0 ? 'slider__button' : 'slider__button slider__button_hidden'}></button>
-      <div className='slider__slide-items' style={slide}>
+      <div 
+        className='slider__slide-items' 
+        style={slide}
+        onTouchStart={onTouchStart} 
+        onTouchMove={onTouchMove} 
+        onTouchEnd={onTouchEnd}
+      >
         <SlideItem image={watermelonShop} scale={scale} />
         <SlideItem image={countdownJs} scale={scale} />
         <SlideItem image={mestoSpa} scale={scale} />
         <SlideItem image={russianTravel} scale={scale} />
         <SlideItem image={howToLearn} scale={scale} />
-        <SlideItem image={watermelonShop} scale={scale} />
       </div>
-      <button onClick={() => toRight()} className={counter !== -(scale + sliderMargin)*6 + widthSlider ? 'slider__button slider__button_right' : 'slider__button slider__button_right slider__button_hidden'}></button>
+      <button onClick={() => toRight()} className={counter !== -(scale + sliderMargin)*AMOUNT + widthSlider ? 'slider__button slider__button_right' : 'slider__button slider__button_right slider__button_hidden'}></button>
     </div>
   );
 };

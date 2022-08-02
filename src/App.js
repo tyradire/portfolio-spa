@@ -17,8 +17,8 @@ function App() {
   const scrollRefProjects = useRef(null);
 
   // const heightComponent = createRef();
-  const [isTablet, setIsTablet] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [viewResolution, setViewResolution] = useState('desktop')
+  // mobile < 500px; tablet < 769px; laptop < 1025; desktop < 1281px; extra > 1280px 
 
   // const [componentHeight, setComponentHeight] = useState(0);
 
@@ -30,15 +30,16 @@ function App() {
   }, []);
 
   const setWindowSize = () => {
-    if (window.screen.width < 500) {
-      setIsTablet(false);
-      setIsMobile(true);
-    } else if (window.screen.width < 800) {
-      setIsTablet(true);
-      setIsMobile(false);
+    if (window.screen.width > 1280) {
+      setViewResolution('extra');
+    } else if (window.screen.width < 500) {
+      setViewResolution('mobile');
+    } else if (window.screen.width < 769) {
+      setViewResolution('tablet');
+    } else if (window.screen.width < 1025) {
+      setViewResolution('laptop');
     } else {
-      setIsTablet(false);
-      setIsMobile(false);
+      setViewResolution('desktop');
     }
     return
   }
@@ -53,6 +54,8 @@ function App() {
 
   // console.log(componentHeight, 'Высота компонента')
 
+  console.log(viewResolution);
+
   return (
     <BrowserRouter>
       <div className="app">
@@ -62,23 +65,23 @@ function App() {
             scrollRefTechnology={scrollRefTechnology} 
             scrollRefProjects={scrollRefProjects}
           />
-          <Header size={isTablet || isMobile} />
+          <Header size={viewResolution} />
           <div className='app__main'>
             <div className='app__sidebar'>
             <Profile />
             <Contacts />
             
             </div>
-            {!isMobile ? <MainContainer size={isTablet} /> : ''} 
+            {viewResolution !== 'mobile' ? <MainContainer size={viewResolution} /> : ''} 
           </div>
           
           {
-            isMobile ? <MobileContainer 
+            viewResolution === 'mobile' ? <MobileContainer 
                 scrollRefAboutMe={scrollRefAboutMe} 
                 scrollRefTechnology={scrollRefTechnology} 
                 scrollRefProjects={scrollRefProjects}
               />
-            : <Footer isTablet={isTablet} isMobile={isMobile}/>
+            : <Footer size={viewResolution}/>
           }
           
         </div>
