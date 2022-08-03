@@ -24,10 +24,16 @@ const Slider = ({ size }) => {
   }, [])
 
   useEffect(() => {
-    if (widthSlider > 769) {
-      setScale(300);
+    if (size === 'extra') {
+      setScale(340);
       setSliderMargin(10)
-    } else {
+    } else if (size === 'desktop') {
+      setScale(320);
+      setSliderMargin(10)
+    } else if (size === 'tablet') {
+      setScale(400);
+      setSliderMargin(10)
+    }  else if (widthSlider < 500) {
       setScale(widthSlider);
       setSliderMargin(0)
     }
@@ -40,7 +46,6 @@ const Slider = ({ size }) => {
 
   const toRight = () => {
     if ( widthSlider - counter + scale + sliderMargin > (scale + sliderMargin)*AMOUNT) {
-      console.log('typic')
       setConter(-(scale + sliderMargin)*AMOUNT + widthSlider);
     } else {
       setConter(counter - scale - sliderMargin);

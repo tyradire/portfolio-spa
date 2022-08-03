@@ -10,7 +10,6 @@
   width: 1520px;
   display: flex;
   align-items: center;
-  justify-content: center;
   transition: .75s;
 }
 
@@ -41,6 +40,30 @@
 
 .slider__button_hidden {
   display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .slider {
+    display: flex;
+    background-position: top;
+  }
+  .slider__slide-items {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    display: flex;
+    height: calc(100vh - 620px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    display: flex;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
