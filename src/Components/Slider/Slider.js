@@ -89,11 +89,11 @@ const Slider = ({ size }) => {
         onTouchMove={onTouchMove} 
         onTouchEnd={onTouchEnd}
       >
-        <SlideItem image={watermelonShop} scale={scale} />
-        <SlideItem image={countdownJs} scale={scale} />
-        <SlideItem image={mestoSpa} scale={scale} />
-        <SlideItem image={russianTravel} scale={scale} />
-        <SlideItem image={howToLearn} scale={scale} />
+        <SlideItem image={watermelonShop} scale={scale} link={'https://watermelon-shop.ru'} />
+        <SlideItem image={countdownJs} scale={scale} link={'https://tyradire.github.io/launch-countdown-timer'} />
+        <SlideItem image={mestoSpa} scale={scale} link={'https://tyradire.github.io/mesto'} />
+        <SlideItem image={russianTravel} scale={scale} link={'https://tyradire.github.io/russian-travel'} />
+        <SlideItem image={howToLearn} scale={scale} link={'https://tyradire.github.io/how-to-learn'} />
       </div>
       <button onClick={() => toRight()} className={counter !== -(scale + sliderMargin)*AMOUNT + widthSlider ? 'slider__button slider__button_right' : 'slider__button slider__button_right slider__button_hidden'}></button>
     </div>
