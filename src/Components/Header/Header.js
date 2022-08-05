@@ -12,10 +12,6 @@ const Header = () => {
   const isProject = location.pathname === PROJECTS_ROUTE;
   const isTechnology = location.pathname === TECHNOLOGY_ROUTE;
 
-  console.log(location.pathname)
-  console.log(ABOUT_ROUTE)
-  console.log(PROJECTS_ROUTE)
-  console.log(TECHNOLOGY_ROUTE)
 
   return (
     <div className='header'>

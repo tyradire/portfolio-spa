@@ -15,9 +15,12 @@ function App() {
   const scrollRefAboutMe = useRef(null);
   const scrollRefTechnology = useRef(null);
   const scrollRefProjects = useRef(null);
+  const refSliderWidth = useRef();
+  
 
   // const heightComponent = createRef();
-  const [viewResolution, setViewResolution] = useState('desktop')
+  const [viewResolution, setViewResolution] = useState('desktop');
+  const [widthSlider, setSliderWidth] = useState(0);
   // mobile < 500px; tablet < 769px; laptop < 1025; desktop < 1281px; extra > 1280px 
 
   // const [componentHeight, setComponentHeight] = useState(0);
@@ -30,6 +33,8 @@ function App() {
   }, []);
 
   const setWindowSize = () => {
+    const sliderWidth = refSliderWidth.current.getBoundingClientRect().width;
+    setSliderWidth(sliderWidth);
     if (window.screen.width > 1280) {
       setViewResolution('extra');
     } else if (window.screen.width < 500) {
@@ -54,7 +59,7 @@ function App() {
 
   // console.log(componentHeight, 'Высота компонента')
 
-  console.log(viewResolution);
+  //console.log(viewResolution);
 
   return (
     <BrowserRouter>
@@ -80,8 +85,9 @@ function App() {
                 scrollRefAboutMe={scrollRefAboutMe} 
                 scrollRefTechnology={scrollRefTechnology} 
                 scrollRefProjects={scrollRefProjects}
+                size={viewResolution} refSliderWidth={refSliderWidth} widthSlider={widthSlider}
               />
-            : <Footer size={viewResolution}/>
+            : <Footer size={viewResolution} refSliderWidth={refSliderWidth} widthSlider={widthSlider}/>
           }
           
         </div>

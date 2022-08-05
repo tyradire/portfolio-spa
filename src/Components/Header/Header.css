@@ -60,7 +60,7 @@
 }
 
 .header__tab {
-  width: 180px;
+  width: 200px;
   height: 42px;
   display: flex;
   align-items: center;
@@ -112,6 +112,9 @@
   .header__tab-light {
     width: 12px;
     height: 8px;
+  }
+  .header__tab {
+    width: 170px;
   }
   .header__tab-light_active {
     box-shadow: 0px 0px 8px #00d841;

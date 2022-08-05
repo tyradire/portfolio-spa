@@ -8,22 +8,23 @@ import russianTravel from '../../assets/images/russian-travel.png';
 import howToLearn from '../../assets/images/how-to-learn.png';
 import { AMOUNT, MARGIN_AMOUNT, SWIPE_DISTANCE } from '../../utils/constants';
 
-const Slider = ({ size }) => {
+const Slider = ({ size, refSliderWidth, widthSlider }) => {
 
   const [counter, setConter] = useState(0);
-  const [widthSlider, setSliderWidth] = useState(0);
+  //const [widthSlider, setSliderWidth] = useState(0);
   const [scale, setScale] = useState(0);
   const [sliderMargin, setSliderMargin] = useState(0);
   const [touchStart, setTouchStart] = useState(null)
   const [touchEnd, setTouchEnd] = useState(null)
-  const refSliderWidth = createRef();
+
+  // useEffect(() => {
+  //   //console.log('ref width', refSliderWidth.current.getBoundingClientRect().width)
+  //   const sliderWidth = refSliderWidth.current.getBoundingClientRect().width;
+  //   setSliderWidth(sliderWidth)
+  // }, [size])
 
   useEffect(() => {
-    const sliderWidth = refSliderWidth.current.getBoundingClientRect().width;
-    setSliderWidth(sliderWidth)
-  }, [])
-
-  useEffect(() => {
+ 
     if (size === 'extra') {
       setScale(340);
       setSliderMargin(10)
@@ -46,7 +47,7 @@ const Slider = ({ size }) => {
 
   const toRight = () => {
     if ( widthSlider - counter + scale + sliderMargin > (scale + sliderMargin)*AMOUNT) {
-      setConter(-(scale + sliderMargin)*AMOUNT + widthSlider);
+      setConter(-(scale + sliderMargin)*AMOUNT + widthSlider - sliderMargin);
     } else {
       setConter(counter - scale - sliderMargin);
     }

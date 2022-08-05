@@ -1,9 +1,9 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import './MobileContainer.css';
+//size={viewResolution} refSliderWidth={refSliderWidth} widthSlider={widthSlider}
 
-
-const MobileContainer = ({ scrollRefAboutMe, scrollRefTechnology, scrollRefProjects }) => {
+const MobileContainer = ({ scrollRefAboutMe, scrollRefTechnology, scrollRefProjects, size, refSliderWidth, widthSlider }) => {
   return (
     <div className='mobile-container'>
       <section className='mobile-container__section' ref={scrollRefAboutMe}>
@@ -128,7 +128,7 @@ const MobileContainer = ({ scrollRefAboutMe, scrollRefTechnology, scrollRefProje
         </p>
         <a className='mobile-container__link mobile-container__text_other' href="https://tyradire.github.io/how-to-learn/"><p className='mobile-container__link-text'>https://tyradire.github.io/how-to-learn</p></a>
       </section>
-    <Footer />
+    <Footer size={size} refSliderWidth={refSliderWidth} widthSlider={widthSlider}/>
     </div>
   );
 };
