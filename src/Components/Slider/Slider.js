@@ -23,6 +23,8 @@ const Slider = ({ size, refSliderWidth, widthSlider }) => {
   //   setSliderWidth(sliderWidth)
   // }, [size])
 
+  const conditionForRightButton = -(scale + sliderMargin)*AMOUNT + widthSlider - sliderMargin;
+
   useEffect(() => {
  
     if (size === 'extra') {
@@ -47,7 +49,7 @@ const Slider = ({ size, refSliderWidth, widthSlider }) => {
 
   const toRight = () => {
     if ( widthSlider - counter + scale + sliderMargin > (scale + sliderMargin)*AMOUNT) {
-      setConter(-(scale + sliderMargin)*AMOUNT + widthSlider - sliderMargin);
+      setConter(conditionForRightButton);
     } else {
       setConter(counter - scale - sliderMargin);
     }
@@ -96,7 +98,7 @@ const Slider = ({ size, refSliderWidth, widthSlider }) => {
         <SlideItem image={russianTravel} scale={scale} link={'https://tyradire.github.io/russian-travel'} />
         <SlideItem image={howToLearn} scale={scale} link={'https://tyradire.github.io/how-to-learn'} />
       </div>
-      <button onClick={() => toRight()} className={counter !== -(scale + sliderMargin)*AMOUNT + widthSlider ? 'slider__button slider__button_right' : 'slider__button slider__button_right slider__button_hidden'}></button>
+      <button onClick={() => toRight()} className={counter !== conditionForRightButton ? 'slider__button slider__button_right' : 'slider__button slider__button_right slider__button_hidden'}></button>
     </div>
   );
 };

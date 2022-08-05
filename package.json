@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rd /s /q dist && webpack",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
