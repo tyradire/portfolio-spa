@@ -52,10 +52,13 @@ const Projects = ( {setHeightContainer} ) => {
         <br/>&nbsp;
         <br/>Таймер обратного отсчёта:
         <br/><a className='technology__link' href="https://tyradire.github.io/launch-countdown-timer/">https://tyradire.github.io/launch-countdown-timer</a>
+        <br/>&nbsp;
         <br/>JS, API
         <br/><a className='technology__link' href="https://tyradire.github.io/mesto/">https://tyradire.github.io/mesto</a>
+        <br/>&nbsp;
         <br/>Адаптивная вёрстка
         <br/><a className='technology__link' href="https://tyradire.github.io/russian-travel/">https://tyradire.github.io/russian-travel</a>
+        <br/>&nbsp;
         <br/>Первая вёрстка
         <br/><a className='technology__link' href="https://tyradire.github.io/how-to-learn/">https://tyradire.github.io/how-to-learn</a>
       </p>

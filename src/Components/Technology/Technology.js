@@ -44,14 +44,14 @@ const Technology = ( {setHeightContainer} ) => {
       <br/>Хуки
       <br/>Создание и подключение контекста
       <br/>React Router
+      <br/>Стейт менеджер MobX
       <br/>&nbsp;
-      <br/>## Другое ##
+      <br/>## Остальные технологии ##
       <br/>&nbsp;
       <br/>Figma
       <br/>ESLint
       <br/>Webpack
       <br/>Git
-      <br/>MobX
       <br/>PostgreSQL / MongoDB
       <br/>Работа с облачным сервером</p>
     </div>

@@ -21,6 +21,12 @@
   max-width: 600px;
 }
 
+.technology__link {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
 -webkit-scrollbar {
   width: 20px;
 }
