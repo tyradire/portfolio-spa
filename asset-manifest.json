@@ -1,9 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio-spa/static/css/main.309572a7.css",
-    "main.js": "/portfolio-spa/static/js/main.ba86de78.js",
+    "main.css": "/portfolio-spa/static/css/main.d2af10fa.css",
+    "main.js": "/portfolio-spa/static/js/main.72906b0a.js",
     "static/js/787.8e7b9eeb.chunk.js": "/portfolio-spa/static/js/787.8e7b9eeb.chunk.js",
     "static/media/watermelon-shop.png": "/portfolio-spa/static/media/watermelon-shop.033f294ebe74e11ccd1b.png",
+    "static/media/SegoeUI.eot": "/portfolio-spa/static/media/SegoeUI.afeddaf4517ff44f38fa.eot",
+    "static/media/SegoeUI.ttf": "/portfolio-spa/static/media/SegoeUI.b127acafb23e1c48733e.ttf",
+    "static/media/SegoeUI-SemiBold.eot": "/portfolio-spa/static/media/SegoeUI-SemiBold.3a911b2e616c382136a2.eot",
+    "static/media/SegoeUI-SemiBold.ttf": "/portfolio-spa/static/media/SegoeUI-SemiBold.7e7e91c1a04e9aab0878.ttf",
+    "static/media/SegoeUI-Light.eot": "/portfolio-spa/static/media/SegoeUI-Light.e1fb2c57bdf0dc6fc983.eot",
+    "static/media/SegoeUI-Light.ttf": "/portfolio-spa/static/media/SegoeUI-Light.e936b0cd9c6babe17658.ttf",
+    "static/media/SegoeUI.woff": "/portfolio-spa/static/media/SegoeUI.7d57fcab3b3b4890bacc.woff",
+    "static/media/SegoeUI-SemiBold.woff": "/portfolio-spa/static/media/SegoeUI-SemiBold.30fd9798b564a1e564e4.woff",
+    "static/media/SegoeUI-Light.woff": "/portfolio-spa/static/media/SegoeUI-Light.637425ddb5e656ddba27.woff",
     "static/media/how-to-learn.png": "/portfolio-spa/static/media/how-to-learn.786d7965158901e4842d.png",
     "static/media/mesto-spa.png": "/portfolio-spa/static/media/mesto-spa.f77bbd98d99ebedc6b64.png",
     "static/media/russian-travel.png": "/portfolio-spa/static/media/russian-travel.8bec5a5c16e0bed7cd34.png",
@@ -16,12 +25,12 @@
     "static/media/arrow-back.svg": "/portfolio-spa/static/media/arrow-back.7e7d0a912fa05bd17716.svg",
     "static/media/phone-icon.svg": "/portfolio-spa/static/media/phone-icon.38b1d173132d6a0f6e4dc5963d336f4a.svg",
     "static/media/location-icon.svg": "/portfolio-spa/static/media/location-icon.0e58cd055e9be74f49b8019f000d7f86.svg",
-    "main.309572a7.css.map": "/portfolio-spa/static/css/main.309572a7.css.map",
-    "main.ba86de78.js.map": "/portfolio-spa/static/js/main.ba86de78.js.map",
+    "main.d2af10fa.css.map": "/portfolio-spa/static/css/main.d2af10fa.css.map",
+    "main.72906b0a.js.map": "/portfolio-spa/static/js/main.72906b0a.js.map",
     "787.8e7b9eeb.chunk.js.map": "/portfolio-spa/static/js/787.8e7b9eeb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.309572a7.css",
-    "static/js/main.ba86de78.js"
+    "static/css/main.d2af10fa.css",
+    "static/js/main.72906b0a.js"
   ]
 }
