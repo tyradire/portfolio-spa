@@ -15,9 +15,9 @@ const AboutMe = ( {setHeightContainer} ) => {
     <div className='technology' ref={refHeightContainer}>
       <p className='technology__string'>
         <br/>&nbsp;
-        <br/>########
-        <br/># Обо мне #
-        <br/>########
+        <br/>##########
+        <br/># Обо мне  #
+        <br/>##########
         <br/>&nbsp;
         <br/>&nbsp;&nbsp;Привет! Меня зовут Даниил
         <br/>&nbsp;

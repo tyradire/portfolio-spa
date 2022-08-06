@@ -1,8 +1,40 @@
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../src/assets/fonts/SegoeUI-Light.eot');
+	src: local('Segoe UI Light'), local('SegoeUI-Light'),
+		url('../src/assets/fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+		url('../src/assets/fonts/SegoeUI-Light.woff') format('woff'),
+		url('../src/assets/fonts/SegoeUI-Light.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../src/assets/fonts/SegoeUI-SemiBold.eot');
+	src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+    url('../src/assets/fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../src/assets/fonts/SegoeUI-SemiBold.woff') format('woff'),
+    url('../src/assets/fonts/SegoeUI-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../src/assets/fonts/SegoeUI.eot');
+	src: local('Segoe UI'), local('SegoeUI'),
+    url('../src/assets/fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+    url('../src/assets/fonts/SegoeUI.woff') format('woff'),
+    url('../src/assets/fonts/SegoeUI.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Segoe UI',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,9 +42,5 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  box-sizing: border-box;
 }

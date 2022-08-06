@@ -23,12 +23,13 @@
 }
 
 .header__github-name {
+  text-decoration: none;
   width: 200px;
   height: 100%;
   margin: 0;
   font-size: 18px;
   line-height: 38px;
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
   box-sizing: border-box;
   border-right: 1px solid #343666;
@@ -86,8 +87,8 @@
   width: 200px;
   margin: 0 0 0 20px;
   font-size: 18px;
-  line-height: 38px;
-  font-weight: 400;
+  line-height: 18px;
+  font-weight: 500;
   color: #5a4f6c;
 }
 
@@ -122,7 +123,6 @@
   .header__tab-name {
     font-size: 16px;
     line-height: 38px;
-    font-weight: 400;
   }
 }
 

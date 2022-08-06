@@ -21,7 +21,7 @@ function App() {
   // const heightComponent = createRef();
   const [viewResolution, setViewResolution] = useState('desktop');
   const [widthSlider, setSliderWidth] = useState(0);
-  // mobile < 500px; tablet < 769px; laptop < 1025; desktop < 1281px; extra > 1280px 
+  // mobile < 500px; tablet < 769px; laptop < 1367; desktop < 1537px; extra > 1536px 
 
   // const [componentHeight, setComponentHeight] = useState(0);
 
@@ -35,13 +35,13 @@ function App() {
   const setWindowSize = () => {
     const sliderWidth = refSliderWidth.current.getBoundingClientRect().width;
     setSliderWidth(sliderWidth);
-    if (window.screen.width > 1280) {
+    if (window.screen.width > 1536) {
       setViewResolution('extra');
     } else if (window.screen.width < 500) {
       setViewResolution('mobile');
     } else if (window.screen.width < 769) {
       setViewResolution('tablet');
-    } else if (window.screen.width < 1025) {
+    } else if (window.screen.width < 1367) {
       setViewResolution('laptop');
     } else {
       setViewResolution('desktop');

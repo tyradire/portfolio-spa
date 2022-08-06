@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SlideItem from '../SlideItem/SlideItem';
 import './Slider.css';
 import watermelonShop from '../../assets/images/watermelon-shop.png';
@@ -28,10 +28,13 @@ const Slider = ({ size, refSliderWidth, widthSlider }) => {
   useEffect(() => {
  
     if (size === 'extra') {
-      setScale(340);
+      setScale(420);
       setSliderMargin(10)
     } else if (size === 'desktop') {
-      setScale(320);
+      setScale(420);
+      setSliderMargin(10)
+    } else if (size === 'laptop') {
+      setScale(240);
       setSliderMargin(10)
     } else if (size === 'tablet') {
       setScale(400);

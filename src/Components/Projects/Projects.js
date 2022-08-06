@@ -15,9 +15,9 @@ const Projects = ( {setHeightContainer} ) => {
     <div ref={refHeightContainer} className='technology'>
       <p className='technology__string'>
         <br/>&nbsp;
-        <br/>###############
-        <br/># Последние проекты #
-        <br/>###############
+        <br/>###################
+        <br/># Последние проекты  #
+        <br/>###################
         <br/>&nbsp;
         <br/>## Watermelon Shop ##
         <br/>&nbsp;

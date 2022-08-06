@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <div className='profile'>
       <div className='profile__wrapper'>
-        <img className='profile__photo' src={avatar}/>
+        <img alt='фото профиля' className='profile__photo' src={avatar}/>
       </div>
       <div className='profile__main'>
         <p className='profile__name'>Угаров Даниил</p>

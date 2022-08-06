@@ -4,7 +4,7 @@ import './SlideItem.css';
 const SlideItem = ({ image, scale, link }) => {
 
   return (
-    <a href={link} target="_blank" rel="noopener">
+    <a href={link} target="_blank" rel="noreferrer">
       <div className='slide-item__image' style={{backgroundImage : `url(${image})`, width: `${scale}px`}}>
         <div className='slide-item__cover' style={{width: `${scale}px`}}></div>
       </div>

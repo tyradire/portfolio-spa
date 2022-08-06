@@ -24,19 +24,19 @@ const Contacts = () => {
   return (
     <div className='contacts'>
       <a className='contacts__item' target='blank' href='https://t.me/tyradire'>
-        <img className='item__icon' src={telegramIcon}/>
+        <img className='item__icon' src={telegramIcon} alt='иконка телеграма'/>
         <p className='item__contact'>@tyradire</p>
       </a>
       <div className='contacts__item' onClick={(e) => copyContact(e)}>
-        <img className='item__icon' src={emailIcon}/>
+        <img className='item__icon' src={emailIcon} alt='иконка почты'/>
         <p className='item__contact'>ugarov.dany@ya.ru</p>
       </div>
       <div className='contacts__item' onClick={(e) => copyContact(e)}>
-        <img className='item__icon' src={phoneIcon}/>
+        <img className='item__icon' src={phoneIcon} alt='иконка номера телефона'/>
         <p className='item__contact'>+7 921 584 1298</p>
       </div>
       <div className='contacts__item contacts__item_no-hover'>
-        <img className='item__icon' src={locationIcon}/>
+        <img className='item__icon' src={locationIcon} alt='иконка локации'/>
         <p className='item__contact'>Санкт-Петербург</p>
       </div>
       <div className={copied ? 'contacts__notification contacts__notification_opened' : 'contacts__notification'}>

@@ -2,13 +2,13 @@
   width: 100%;
 }
 
-.technology__subtitle {
+/* .technology__subtitle {
   margin: 0;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
-}
+} */
 
 .technology__string {
   height: 20px;
@@ -16,7 +16,7 @@
   color: #b3a5c3;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
+  font-weight: 500;
   white-space: pre-wrap;
   max-width: 600px;
 }

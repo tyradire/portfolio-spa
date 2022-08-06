@@ -1,12 +1,11 @@
 .app {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .app__content {
   width: 1280px;
   margin: 0 auto;
-  font-family: 'Segoe UI', sans-serif;
   border: 1px solid #343666;
   background-color: #231a32;
   box-shadow: 0px 0px 12px #0c0022;
@@ -22,7 +21,11 @@
   display: flex;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1536px) {
+  .app {
+    width: 100%;
+    padding-top: 0;
+  }
   .app__content {
     width: 1024px;
   }
