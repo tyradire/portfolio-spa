@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SlideItem from '../SlideItem/SlideItem';
 import './Slider.css';
 import watermelonShop from '../../assets/images/watermelon-shop.png';
+import moviesApp from '../../assets/images/movies.png';
 import countdownJs from '../../assets/images/countdown-js.png';
 import mestoSpa from '../../assets/images/mesto-spa.png';
 import russianTravel from '../../assets/images/russian-travel.png';
@@ -96,6 +97,7 @@ const Slider = ({ size, refSliderWidth, widthSlider }) => {
         onTouchEnd={onTouchEnd}
       >
         <SlideItem image={watermelonShop} scale={scale} link={'https://watermelon-shop.ru'} />
+        <SlideItem image={moviesApp} scale={scale} link={'https://cinema.nomoredomains.work'} />
         <SlideItem image={countdownJs} scale={scale} link={'https://tyradire.github.io/launch-countdown-timer'} />
         <SlideItem image={mestoSpa} scale={scale} link={'https://tyradire.github.io/mesto'} />
         <SlideItem image={russianTravel} scale={scale} link={'https://tyradire.github.io/russian-travel'} />

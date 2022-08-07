@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio-spa/static/css/main.a566ccc7.css",
-    "main.js": "/portfolio-spa/static/js/main.c52c3aad.js",
+    "main.js": "/portfolio-spa/static/js/main.2ad378bc.js",
     "static/js/787.8e7b9eeb.chunk.js": "/portfolio-spa/static/js/787.8e7b9eeb.chunk.js",
     "static/media/watermelon-shop.png": "/portfolio-spa/static/media/watermelon-shop.033f294ebe74e11ccd1b.png",
+    "static/media/movies.png": "/portfolio-spa/static/media/movies.8402c5cf2122e717a4e6.png",
     "static/media/SegoeUI.eot": "/portfolio-spa/static/media/SegoeUI.afeddaf4517ff44f38fa.eot",
     "static/media/SegoeUI.ttf": "/portfolio-spa/static/media/SegoeUI.b127acafb23e1c48733e.ttf",
     "static/media/SegoeUI-SemiBold.eot": "/portfolio-spa/static/media/SegoeUI-SemiBold.3a911b2e616c382136a2.eot",
@@ -26,11 +27,11 @@
     "static/media/phone-icon.svg": "/portfolio-spa/static/media/phone-icon.38b1d173132d6a0f6e4dc5963d336f4a.svg",
     "static/media/location-icon.svg": "/portfolio-spa/static/media/location-icon.0e58cd055e9be74f49b8019f000d7f86.svg",
     "main.a566ccc7.css.map": "/portfolio-spa/static/css/main.a566ccc7.css.map",
-    "main.c52c3aad.js.map": "/portfolio-spa/static/js/main.c52c3aad.js.map",
+    "main.2ad378bc.js.map": "/portfolio-spa/static/js/main.2ad378bc.js.map",
     "787.8e7b9eeb.chunk.js.map": "/portfolio-spa/static/js/787.8e7b9eeb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a566ccc7.css",
-    "static/js/main.c52c3aad.js"
+    "static/js/main.2ad378bc.js"
   ]
 }
