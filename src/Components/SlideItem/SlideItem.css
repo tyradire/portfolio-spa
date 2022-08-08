@@ -56,6 +56,9 @@
   .slide-item__image {
     height: calc(100vh - 660px);
   }
+  .slide-item__cover {
+    height: calc(100vh - 660px);
+  }
 }
 
 @media screen and (max-width: 500px) {
