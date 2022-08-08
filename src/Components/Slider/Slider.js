@@ -35,7 +35,7 @@ const Slider = ({ size, refSliderWidth, widthSlider }) => {
       setScale(420);
       setSliderMargin(10)
     } else if (size === 'laptop') {
-      setScale(240);
+      setScale(420);
       setSliderMargin(10)
     } else if (size === 'tablet') {
       setScale(400);

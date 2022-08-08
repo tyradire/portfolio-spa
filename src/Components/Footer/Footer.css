@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 1024px) {
   .footer {
-    height: calc(100vh - 680px);
+    height: 240px;
     overflow: hidden;
   }
 }

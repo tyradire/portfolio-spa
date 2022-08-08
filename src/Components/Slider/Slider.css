@@ -63,7 +63,8 @@
 @media screen and (max-width: 1024px) {
   .slider {
     display: flex;
-    height: calc(100vh - 620px);
+    align-items: center;
+    height: 240px;
   }
 }
 

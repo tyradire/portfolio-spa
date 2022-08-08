@@ -45,7 +45,10 @@
 
 @media screen and (max-width: 1024px) {
   .slide-item__image {
-    height: 200px;
+    height: 220px;
+  }
+  .slide-item__cover {
+    height: 220px;
   }
 }
 
